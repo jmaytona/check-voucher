@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Genesis Check Voucher</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="#">Genesis</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#showcase">Home</a></li>
+                    <li><a href="#info1">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!----------------------------TABS-------------------------------------->
+
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#voucherinformation" data-toggle="tab">VOUCHER INFORMATION</a></li>
+            <li><a href="#teller" data-toggle="tab">TELLER</a></li>
+            <li><a href="#invoice" data-toggle="tab">INVOICE</a></li>
+            <li><a href="#check" data-toggle="tab">CHECK</a></li>
+        </ul>
+        <br>
+        <br>
+
+        <div class="tab-content">
+            <!----------------------------VOUCHER INFORMATION-------------------------------------->
+
+
+            <div class="tab-pane fade in active" id="voucherinformation">
+                <form>
+                    <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Voucher Date *</label>
+                        <div class="col-sm-3">
+                            <input type="email" class="form-control" id="colFormLabel" placeholder="Voucher Date">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Paid To *</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" id="colFormLabel" placeholder="Paid To">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Bank *</label>
+                        <div class="col-sm-2">
+                            <input type="email" class="form-control" id="colFormLabel" placeholder="Bank">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!----------------------------TELLER TAB-------------------------------------->
+
+            <div class="tab-pane fade" id="teller">
+                <form>
+                    <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Payment Approval *</label>
+                        <div class="col-sm-5">
+                            <input type="email" class="form-control" id="colFormLabel" placeholder="Payment Approval">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Received By *</label>
+                        <div class="col-sm-5">
+                            <input type="email" class="form-control" id="colFormLabel" placeholder="Received By">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Teller *</label>
+                        <div class="col-sm-5">
+                            <input type="email" class="form-control" id="colFormLabel" placeholder="Teller">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Requested By *</label>
+                        <div class="col-sm-5">
+                            <input type="email" class="form-control" id="colFormLabel" placeholder="Requested By">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Terminal *</label>
+                        <div class="col-sm-5">
+                            <input type="email" class="form-control" id="colFormLabel" placeholder="Terminal">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Remarks *</label>
+                        <div class="col-sm-5">
+                            <input type="email" class="form-control" id="colFormLabel" placeholder="Remarks">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!----------------------------INVOICE TAB-------------------------------------->
+
+            <div class="tab-pane fade" id="invoice">
+
+                <td><button type="button" class="btn btn-primary">Add Row</button></td>
+                <br>
+                <br>
+                <div class="panel panel-default">
+
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Invoice</div>
+
+                    <!-- Table -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Invoice Number</th>
+                                <th>Check Voucher</th>
+                                <th>Amount</th>
+                                <th>Supplier</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                <td><input type="text" class="form-control" placeholder="Invoice Number"></td>
+                                <td>1</td>
+                                <td><input type="text" class="form-control" placeholder="Amount"></td>
+                                <td>Sample Supplier</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                <td><input type="text" class="form-control" placeholder="Invoice Number"></td>
+                                <td>1</td>
+                                <td><input type="text" class="form-control" placeholder="Amount"></td>
+                                <td>Sample Supplier</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                <td><input type="text" class="form-control" placeholder="Invoice Number"></td>
+                                <td>1</td>
+                                <td><input type="text" class="form-control" placeholder="Amount"></td>
+                                <td>Sample Supplier</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                <td><input type="text" class="form-control" placeholder="Invoice Number"></td>
+                                <td>1</td>
+                                <td><input type="text" class="form-control" placeholder="Amount"></td>
+                                <td>Sample Supplier</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                <td><input type="text" class="form-control" placeholder="Invoice Number"></td>
+                                <td>1</td>
+                                <td><input type="text" class="form-control" placeholder="Amount"></td>
+                                <td>Sample Supplier</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!----------------------------CHECK TAB-------------------------------------->
+
+            <div class="tab-pane fade" id="check">
+                <div class="container">
+                    <h2>CHECK</h2>
+                    <p>Check if i'll will input a textbox here</p>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>ID</th>
+                                <th>Check Number</th>
+                                <th>Check Date</th>
+                                <th>Bank</th>
+                                <th>Amount</th>
+                                <th>Debit</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">=<span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">New</a></li>
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td>BPI San Fernando</td>
+                                <td>6,435.71</td>
+                                <td></td>
+                                <td>Ok</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>6,435.71</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+            <!--------------------------------- CHECK DETAILS --------------------------------------->
+        <div class="check_details">
+        <td><button type="button" class="btn btn-primary" id="addcd">+</button></td>
+        <div class="panel panel-default">
+
+            <!-- Default panel contents -->
+            <div class="panel-heading">CHECK DETAILS</div>
+
+            <!-- Table -->
+            <table class="table" id="cdtable">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Particular</th>
+                        <th>Amount</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><button type="button" class="btn btn-danger delcd">Delete</button></td>
+                        <td><input type="text" class="form-control" placeholder="Particular"></td>
+                        <td><input type="text" class="form-control" placeholder="Amount"></td>
+                        <td><input type="text" class="form-control" placeholder="Remarks"></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-danger delcd">Delete</button></td>
+                        <td><input type="text" class="form-control" placeholder="Particular"></td>
+                        <td><input type="text" class="form-control" placeholder="Amount"></td>
+                        <td><input type="text" class="form-control" placeholder="Remarks"></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-danger delcd">Delete</button></td>
+                        <td><input type="text" class="form-control" placeholder="Particular"></td>
+                        <td><input type="text" class="form-control" placeholder="Amount"></td>
+                        <td><input type="text" class="form-control" placeholder="Remarks"></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-danger delcd">Delete</button></td>
+                        <td><input type="text" class="form-control" placeholder="Particular"></td>
+                        <td><input type="text" class="form-control" placeholder="Amount"></td>
+                        <td><input type="text" class="form-control" placeholder="Remarks"></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-danger delcd">Delete</button></td>
+                        <td><input type="text" class="form-control" placeholder="Particular"></td>
+                        <td><input type="text" class="form-control" placeholder="Amount"></td>
+                        <td><input type="text" class="form-control" placeholder="Remarks"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-center">
+        <button type="button" class="btn btn-primary">Add</button>
+        <button type="button" class="btn btn-default">Cancel</button>
+        </div>
+
+    </div>
+    </div>
+
+
+    <!----------------------------END OF TABLE-------------------------------------->
+
+
+
+    <footer>
+        <p class="text-center">Check Voucher Copyright &copy; 2017</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="checkvoucher.js"></script>
+
+
+
+</body>
+
+</html>
